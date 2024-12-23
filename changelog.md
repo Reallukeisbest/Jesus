@@ -1,3 +1,5 @@
+# 1.2.1
+- God updated the mod to 2.2074.
 # 1.2.0
 - And on the ninth day:
     - God could not play the bell sound effect consistently, so He took matters into His own hands. <cl>(And now there's a volume setting for it as well.)</c>

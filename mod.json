@@ -1,119 +1,136 @@
 {
-	"geode": "3.4.0",
-	"gd": {
-		"win": "2.206",
-		"mac": "2.206",
-		"android": "2.206"
-	},
-	"resources": {
-		"sprites": ["resources/*.png"],
-		"files": ["resources/*.ogg"]
-	},
-	"tags": ["joke"],
-	"version": "v1.2.0",
-	"id": "iliashdz.jesus",
-	"name": "Jesus",
-	"developer": "IliasHDZ",
-	"description": "Jesus Christ flashes before your eyes as you nearly escape death.",
-	"repository": "https://github.com/iliasHDZ/Jesus",
-	"settings": {
-		"enabled": {
-			"name": "Enabled",
-			"description": "Toggles the mod.",
-			"type": "bool",
-			"default": true
-		},
-		"playLayer": {
-			"name": "Playing Levels",
-			"description": "Show Jesus when playing levels.",
-			"type": "bool",
-			"default": true,
-			"platforms": ["mac", "android32", "android64"]
-		},
-		"levelEditorLayer": {
-			"name": "Level Editor",
-			"description": "Show Jesus when playtesting levels in the level editor.\n\n<cy>If this feature is causing crashes for you, please</c> <cr>DISABLE IT</c><cy>.</c>",
-			"type": "bool",
-			"default": {
-				"win": false,
-				"mac": true,
-				"android": false
-			},
-			"platforms": ["mac", "android32", "android64"]
-		},
-		"volume": {
-			"name": "Volume (%)",
-			"description": "Set the volume of the bell (or custom sound effect you've chosen) as a percentage.",
-			"type": "int",
-			"default": 25,
-			"min": 0,
-			"max": 100,
-			"control": {
-				"input": true,
-				"slider": true,
-				"arrows": true,
-				"big-arrows": true,
-				"arrow-step": 1,
-				"big-arrow-step": 5,
-				"slider-step": 1
-			}
-		},
-		"skipInvisibleObjects": {
-			"name": "Skip Invisible Objects",
-			"description": "Decide if you want to see Jesus when you are near invisible spikes/hazards.\n\n<cy>Jesus will still appear when you are near objects that have been explicitly disabled by</c> <cr>Tog</c><cg>gle</c> <cy>triggers.</c>",
-			"type": "bool",
-			"default": true
-		},
-		"sensitivity": {
-			"name": "Sensitivity",
-			"description": "The minimum distance between the player hitbox and a spike hitbox required for Him (or your custom image) to appear.\n\nThe higher this value, the further away you can be from a spike in order to see Jesus.",
-			"type": "float",
-			"default": 2,
-			"min": 0.0,
-			"max": 10.0,
-			"control": {
-				"arrows": false,
-				"big-arrows": false,
-				"input": true,
-				"slider": true,
-				"slider-step": 0.01
-			}
-		},
-		"customImage": {
-			"name": "Custom Image",
-			"description": "If you would like a custom image to show instead of Jesus, choose one here.\n\n<cy>If you just want to see Jesus (by default)there's no need to change this setting.</c>",
-			"type": "path",
-			"default": "Please choose an image file.",
-			"control": {
-				"filters": [
-					{
-						"description": "Images",
-						"files": [
-							"*.png"
-						]
-					}
-				]
-			}
-		},
-		"customSound": {
-			"name": "Custom Sound",
-			"description": "If you would like a custom audio file to play instead of a bell, choose one here.\n\n<cy>If you just want to hear the bell (by default)there's no need to change this setting.</c>",
-			"type": "path",
-			"default": "Please choose an audio file.",
-			"control": {
-				"filters": [
-					{
-						"description": "Audio files",
-						"files": [
-							"*.mp3",
-							"*.wav",
-							"*.flac",
-							"*.oga",
-							"*.ogg"
-						]
-					}
-				]
-			}
-		}
-	}
+    "geode": "4.0.1",
+    "gd": {
+        "win": "2.2074",
+        "android": "2.2074",
+        "mac": "2.2074",
+        "ios": "2.2074"
+    },
+    "resources": {
+        "sprites": [
+            "resources/*.png"
+        ],
+        "files": [
+            "resources/*.ogg"
+        ]
+    },
+    "tags": [
+        "joke"
+    ],
+    "version": "v1.2.1",
+    "id": "iliashdz.jesus",
+    "name": "Jesus",
+    "developer": "IliasHDZ",
+    "description": "Jesus flashes onscreen as you escape death.",
+    "links": {
+        "source": "https://github.com/iliasHDZ/Jesus"
+    },
+    "settings": {
+        "enabled": {
+            "name": "Enabled",
+            "description": "Toggles the mod.",
+            "type": "bool",
+            "default": true
+        },
+        "playLayer": {
+            "name": "Playing Levels",
+            "description": "Show Jesus when playing levels.",
+            "type": "bool",
+            "default": true,
+            "platforms": [
+                "mac",
+                "android32",
+                "android64"
+            ]
+        },
+        "levelEditorLayer": {
+            "name": "Level Editor",
+            "description": "Show Jesus when playtesting levels in the level editor.\n\n<cy>If this feature is causing crashes for you, please</c> <cr>DISABLE IT</c><cy>.</c>",
+            "type": "bool",
+            "default": {
+                "win": false,
+                "mac": true,
+                "android": false
+            },
+            "platforms": [
+                "mac",
+                "android32",
+                "android64"
+            ]
+        },
+        "volume": {
+            "name": "Volume (%)",
+            "description": "Set the volume of the bell (or custom sound effect you've chosen) as a percentage.",
+            "type": "int",
+            "default": 25,
+            "min": 0,
+            "max": 100,
+            "control": {
+                "input": true,
+                "slider": true,
+                "arrows": true,
+                "big-arrows": true,
+                "arrow-step": 1,
+                "big-arrow-step": 5,
+                "slider-step": 1
+            }
+        },
+        "skipInvisibleObjects": {
+            "name": "Skip Invisible Objects",
+            "description": "Decide if you want to see Jesus when you are near invisible spikes/hazards.\n\n<cy>Jesus will still appear when you are near objects that have been explicitly disabled by</c> <cr>Tog</c><cg>gle</c> <cy>triggers.</c>",
+            "type": "bool",
+            "default": true
+        },
+        "sensitivity": {
+            "name": "Sensitivity",
+            "description": "The minimum distance between the player hitbox and a spike hitbox required for Him (or your custom image) to appear.\n\nThe higher this value, the further away you can be from a spike in order to see Jesus.",
+            "type": "float",
+            "default": 2,
+            "min": 0.0,
+            "max": 10.0,
+            "control": {
+                "arrows": false,
+                "big-arrows": false,
+                "input": true,
+                "slider": true,
+                "slider-step": 0.01
+            }
+        },
+        "customImage": {
+            "name": "Custom Image",
+            "description": "If you would like a custom image to show instead of Jesus, choose one here.\n\n<cy>If you just want to see Jesus (by default)there's no need to change this setting.</c>",
+            "type": "file",
+            "default": "Please choose an image file.",
+            "control": {
+                "filters": [
+                    {
+                        "description": "Images",
+                        "files": [
+                            "*.png"
+                        ]
+                    }
+                ]
+            }
+        },
+        "customSound": {
+            "name": "Custom Sound",
+            "description": "If you would like a custom audio file to play instead of a bell, choose one here.\n\n<cy>If you just want to hear the bell (by default)there's no need to change this setting.</c>",
+            "type": "file",
+            "default": "Please choose an audio file.",
+            "control": {
+                "filters": [
+                    {
+                        "description": "Audio files",
+                        "files": [
+                            "*.mp3",
+                            "*.wav",
+                            "*.flac",
+                            "*.oga",
+                            "*.ogg"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
 }
